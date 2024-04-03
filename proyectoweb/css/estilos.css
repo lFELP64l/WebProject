@@ -1,22 +1,91 @@
-@media (min-width: 994px) {
-    .navbar,
-    .navbar-collapse {
-      flex-direction: column;
-    }
-    .navbar-expand-lg .navbar-nav {
-      flex-direction: column;
-    }
-    .navbar {
-      width: 28%;
-      height: 100vh;
-      align-items: flex-start;
-    }
-    .navbar-brand {
-      margin-left: 0.5em;
-      padding-bottom: 0;
-      border-bottom: 4px solid #464646;
-    }
-    form input {
-      margin-bottom: 0.7em;
-    }
+.header {
+  background-color: teal;
+  grid-area: header;
+}
+
+.nav {
+  background-color: khaki;
+  grid-area: nav;
+}
+
+.principal {
+  grid-area: principal;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "caja1 caja1"
+  "caja2 caja3"
+}
+
+.aside {
+  background-color: goldenrod;
+  grid-area: aside;
+}
+
+.footer {
+  background-color: coral;
+  grid-area: footer;
+}
+
+.grid {
+  height: 100vh;
+  margin: 1%;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 18fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "nav principal aside"
+  "footer footer footer"
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    height: 100vh;
+    margin: 1%;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "header "
+    "principal"
+    "aside" 
+    "footer"
   }
+
+  .nav {
+    display: none;
+
+  }
+
+  .principal {
+    grid-area: principal;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "caja1"
+    "caja2"
+    "caja3"
+  }
+}
+
+.caja1 {
+  background-color: lightblue;
+  grid-area: caja1;
+}
+
+.caja2 {
+  background-color: lightblue;
+  grid-area: caja2;
+}
+
+.caja3 {
+  background-color: lightblue;
+  grid-area: caja3;
+}
