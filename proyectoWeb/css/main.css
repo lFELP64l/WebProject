@@ -18,7 +18,7 @@ body {
 
  #menu a{
      color:#3f3f3f;
-     
+
  }
 /*===================SLIDER DE IMAGENES==========================*/
 
@@ -31,6 +31,10 @@ body {
     border-radius: 4px;
     max-inline-size: 400px;
     margin: auto;
+}
+
+#carrusel img{
+    max-height: 800px;
 }
 /*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
 
@@ -74,8 +78,8 @@ body {
     transform: translate(-50%, -50%);
     background: #fbfafa;
     border-radius:5px;
-    
 }
+
 
 #titulo-formulario {
     color: #3f3f3f;
@@ -117,8 +121,9 @@ footer p{
     margin:auto;
     padding-top:50px;    
    }
- 
+
 }
+
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 
 
@@ -167,4 +172,10 @@ footer p{
         justify-content: center !important;
         text-align: center;
     }
+}
+
+/*=========================NOTICIA================================*/
+
+#noticiabody {
+    margin-bottom: 300px;
 }

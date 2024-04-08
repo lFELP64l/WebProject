@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+  <title>Full news</title>
+
+</head>
+
+<body>
+  <!--========================================================== -->
+  <!-- ENCABEZADO -->
+  <!--========================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+    <div class="container">
+      <a class="navbar-brand" href="sesion_iniciada.html">
+        <span class="fs-5 text-primary fw-bold">FullNews</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="CategoriaPolitica.html">Politica</a></li>
+              <li><a class="dropdown-item" href="CategoriaDeporte.html">Deporte</a></li>
+              <li><a class="dropdown-item" href="CategoriaEconomia.html">Economia</a></li>
+              <li><a class="dropdown-item" href="Categoria.html">Cultura</a></li>
+              <li><a class="dropdown-item" href="Categoria.html">Social</a></li>
+              <li><a class="dropdown-item" href="Categoria.html">Policia</a></li>
+              <li><a class="dropdown-item" href="Categoria.html">Ciencia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pefil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Cerrar sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--========================================================== -->
+  <!-- NOTICIAS -->
+  <!--========================================================== -->
+  <div class="container mt-5" id="noticiabody">
+    <div class="row">
+      <div class="col-md-8">
+        <h4><i>Deportes</i></h4>
+        <h1>Colo colo VS Fluminense</h1>
+        <p class="text-muted">Publicado el 5 de Marzo de 2024</p>
+        <img src="img/deportes1.jpg" class="img-fluid" alt="imagen noticia 2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat tortor. Integer nec justo neque.
+          Phasellus nec metus id mi consectetur posuere vel eget orci. Cras vitae purus augue. Ut nec ornare lorem.
+          Mauris id viverra risus, vitae vestibulum eros. Integer eu ultrices mauris.</p>
+        <p>Quisque a turpis ac felis convallis dignissim. Duis malesuada congue sapien, a fermentum enim rutrum et.
+          Aenean eu urna at ipsum luctus vehicula.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Otras Noticias</h3>
+        <div class="card">
+          <img class="card-img-top" src="img/economia1.jpg" alt="" width="200" height="200">
+          <div class="card-body">
+            <h6><i>Economía</i></h6>
+            <a href="noticia3.html">
+              <h4>Alza en el precio del cobre</h4>
+            </a>
+            <p>Según datos del Banco Central, este viernes el precio del cobre rondaría los...</p>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/politica1.jpg" alt="" width="200" height="200">
+            <div class="card-body">
+              <h6><i>Política</i></h6>
+              <a href="noticia1.html">
+                <h4>Presidente Boric presenta propuesta</h4>
+              </a>
+              <p>La tarde de este lunes el presidente Boric dió a conocer las próximas intancias de...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--========================================================== -->
+  <!-- SECCION CONTACTOS-->
+  <!--========================================================== -->
+
+  <section id="seccion-contacto" class="border-bottom border-secondary border-2">
+    <div id="bg-contactos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#1b2a4e" fill-opacity="1"
+          d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+
+
+    <!--========================================================== -->
+    <!-- CONTENEDOR DEL FORMULARIO -->
+    <!--========================================================== -->
+
+    <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+      <div class="text-center mb-4" id="titulo-formulario">
+        <div><img src="./img/support.png" alt="" class="img-fluid ps-5"></div>
+        <h2>Contactanos</h2>
+        <p class="fs-5">Estamos aqui para ayudarte</p>
+      </div>
+
+
+
+      <form method="POST" data-netlify="true" action="#">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+        </div>
+
+
+        <div class="mb-3">
+          <input type="input" class="form-control" id="name" name="name" placeholder="Nombre">
+        </div>
+
+
+        <div class="mb-3">
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control" name="message" id="message" rows="4" placeholder="Mensaje"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <a href="#" class="btn btn-primary w-100 fs-5" role="button">Enviar Mensaje</a>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!--========================================================== -->
+  <!--FOOTER-->
+  <!--========================================================== -->
+
+  <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3  pt-3">FullNews &copy; Todos Los Derechos Reservados 2024</p>
+    <div id="iconos">
+      <a href="admin_sesion.html"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
